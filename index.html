@@ -1,229 +1,271 @@
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-159315608-5"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'UA-159315608-5');
-</script>
-<!-- XUSOFT版权所有 成员:cxbsoft | xcsoft | xltzsoft 时间:20200201 修改次数:6 -->
+<!-- 
+  Designed by xcsoft
+  https://soxft.cn
+  2020/05/01
+  //版权所有,盗版必究
+-->
 <!DOCTYPE html>
-<html>
-<head>
-    <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/soxft/cdn@master/soxft.cn/img/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>XUSOFT - 团队介绍</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/soxft/cdn@latest/mdui/css/mdui.min.css">
-    <script src="https://cdn.jsdelivr.net/gh/soxft/cdn@latest/mdui/js/mdui.min.js"></script>
-      <style>
-    a {
-      text-decoration:none
-    }
-    a:hover {
-      text-decoration:none
-    }
-  </style>
+<html lang="zh_CN">
+    <head>
+        <!-- 网页信息配置。 -->
+        <meta charset="utf-8" />
+        <meta name="author" content="xcsoft" />
+        <meta name="description" content="XUSOFT Programmar Studio" />
+        <meta name="keywords" content="PHP,PYTHON,Programmar,XUSOFT,SOXFT,SOXFT.CN,cxbsoft,xcsoft,xltzsoft,通州高级中学" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+        <link rel="shortcut icon" type="image/x-icon" href="https://cdn.jsdelivr.net/gh/soxft/cdn@master/soxft.cn/img/favicon.ico" media="screen" />
+        <title>XUSOFT</title>
+        <!-- CSS -->
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/soxft/cdn@latest/mdui/css/mdui.min.css">
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159315608-5"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+            gtag('config', 'UA-159315608-5');
+        </script>
+        <!-- 页面内样式表文件 -->
+        <style>
+        .footer {
+            /*页脚样式，仿Google页脚*/
+            line-height: 40px;
+            background: #f2f2f2;
+            border-top: 1px solid #e4e4e4;
+            font-size: 10pt;
+            color: #222;
+        }
+        .footer text, .footer a {
+            /*页脚链接和文字*/
+            margin-left: 30px;
+            color: #666;
+            display: inline-block;
+            line-height: 40px;
+            font-family: sans-serif;
+            font-size: 10pt;
+            margin-right: 30px;
+            text-decoration: none;
+        }
+        #banner {
+            /*横幅宽高和背景壁纸*/
+            background-image: url(https://api.xsot.cn/bing/?type=jump);
+            /* https://qianqu.me/sakurafrp/images/hero_bg.jpg */
+            height: 100vh;
+            width: 100%;
+            background-size:cover
+        }
+        .banner-title {
+            font-weight: 400;
+        }
+        .content-view {
+            padding-top: 64px;
+        }
+        body {
+            background-color: #f1f1f1;
+        }
+        .no-title-weight {
+            font-weight: 400;
+        }
+        .mdui-list-item-icon, .mdui-list-item-content {
+            color: rgba(0, 0, 0, 0.54);
+        }
+        .loading {
+            left: 45%;
+            top: 30%;
+        }
+        </style>
     </head>
-    <body background="https://cdn.jsdelivr.net/gh/soxft/cdn@master/soxft.cn/img/background.png"
-    class="mdui-theme-primary-indigo mdui-theme-accent-pink">
-    <center>
-        <h1>
-            <div class="doc-example-demo font-demo" style="font-weight:900;">
-                关于我们
+    <!-- NO复制 -->
+<body oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
+    <header id="appbar" class="mdui-appbar mdui-appbar-fixed">
+        <!-- 页面顶部加载条 -->
+        <div class="mdui-progress" id="preloader">
+            <div class="mdui-progress-indeterminate"></div>
+        </div>
+        <!-- 导航栏 -->
+        <div class="mdui-toolbar mdui-color-theme">
+            <button mdui-drawer="{target:'#sidebar',overlay:true,swipe:true}" class="mdui-hidden-md-up mdui-col-xs-12 mdui-btn mdui-btn-icon mdui-ripple"><i class="mdui-icon material-icons">menu</i>
+
+            </button>
+            <div class="mdui-typo-title font-weight:500;" id="appbar-title">逍遥阁</div>
+            <div class="mdui-toolbar-spacer"></div>
+            <button onclick="window.open('https://github.com/xusoft');" mdui-tooltip="{content:'团队Github'}" class="mdui-hidden-xs mdui-btn">Github</button>
+        </div>
+    </header>
+    <nav id="banner" class="mdui-container-fluid mdui-valign">
+        <div class="mdui-row">
+            <!-- PC及以上可见 -->
+            <div class="mdui-col-xs-12 mdui-col-sm-8 mdui-col-offset-xs-1 mdui-typo-display-4 mdui-hidden-xs">XUSOFT</div>
+            <div class="mdui-col-xs-12 mdui-col-sm-8 mdui-col-offset-xs-1 mdui-typo-display-2 mdui-hidden-xs">专业的软件开发团队</div>
+            <!-- 手机(小屏幕) -->
+            <div class="mdui-col-xs-12 mdui-col-sm-8 mdui-col-offset-xs-1 mdui-typo-display-3 mdui-hidden-sm-up">XUSOFT</div>
+            <div class="mdui-col-xs-12 mdui-col-sm-8 mdui-col-offset-xs-1 mdui-typo-headline mdui-hidden-sm-up">专业的软件开发团队</div>
+            <div class="mdui-col-xs-12 mdui-col-sm-8" style="height:25px;"></div>
+            <div class="mdui-col-xs-12 mdui-col-sm-8 mdui-col-offset-xs-1">
+                <button style="width: 30%;" onclick="window.location.href='mailto:contact@xcsoft.top';" mdui-tooltip="{content:'联系我们'}" class="mdui-btn mdui-color-teal mdui-ripple"><i class="mdui-icon mdui-icon-left material-icons">contact_mail</i>联系我们</button>
             </div>
-        </h1>
-
         </div>
-        </div>
-    </center>
-    <!-- 介绍 -->
-    <!-- 团队介绍 -->
+    </nav>
+    <div id="sidebar" class="mdui-drawer mdui-drawer-full-height mdui-drawer-close mdui-color-white">
+        <!-- 侧边栏 -->
+        <div>
+            <ul class="mdui-list">
+                <li class="mdui-subheader">XUSOFT</li>
+                <li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">code</i>
 
-    <h3>
-        <div class="doc-example-demo font-demo" style="font-weight:500;">
-            我们的团队：
-        </div>
-    </h3>
+                    <div class="mdui-list-item-content">首页</div>
+                </li>
+                <li class="mdui-subheader">其他</li>
+                <li class="mdui-list-item mdui-ripple" onclick="window.open('http://github.com/xusofts');"> <i class="mdui-list-item-icon mdui-icon material-icons">code</i>
 
-    <!-- 团队卡片 -->
-    <div class="mdui-card">
-        <div class="mdui-card-media">
-            <img src="https://cdn.jsdelivr.net/gh/soxft/cdn@master/soxft.cn/img/team.png" />
-            <div class="mdui-card-media-covered">
+                    <div class="mdui-list-item-content">GitHub</div>
+                </li>
+                <li class="mdui-list-item mdui-ripple" onclick="window.location.href='https://blog.xsot.cn'" mdui-tooltip="{content:'原諒我這一生 不羁放纵爱自由'}"> <i class="mdui-list-item-icon mdui-icon material-icons">library_books</i>
+
+                    <div class="mdui-list-item-content">星辰日记</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <main id="startx" class="content-view mdui-container">
+        <div class="mdui-typo">
+             <h2 class="doc-chapter-title doc-chapter-title-first">XUSOFT</h2>
+            <div class="mdui-card">
+                <div class="mdui-card-header">
+                    <img class="mdui-card-header-avatar" src="https://cdn.jsdelivr.net/gh/soxft/cdn@master/soxft.cn/img/xusoft.jpg" />
+                    <div class="mdui-card-header-title">cxbsoft</div>
+                    <div class="mdui-card-header-subtitle">没有解决不了的问题</div>
+                </div>
                 <div class="mdui-card-primary">
-                    <div class="mdui-card-primary-title">XUSOFT</div>
-                    <div class="mdui-card-primary-subtitle">XUSOFT团队于2018在南通成立。
-                        <br />这是由一群网络爱好者组成的团队。</div>
+                    <div class="mdui-card-primary-title">育才2017级 - 蔡徐博</div>
+                    <div class="mdui-card-primary-subtitle">擅长Python,PHP等</div>
                 </div>
-            </div>
-        </div>
-    </div>
-    <br />
-    <!--核心成员-->
-
-    <h4>
-        <div class="doc-example-demo font-demo" style="font-weight: 400;">
-            团队核心成员：
-        </div>
-    </h4>
-
-    <!-- cxbsoft -->
-    <div class="mdui-card">
-        <div class="mdui-card-header">
-            <img class="mdui-card-header-avatar"
-                src="https://cdn.jsdelivr.net/gh/soxft/cdn@master/soxft.cn/img/xusoft.jpg" />
-            <div class="mdui-card-header-title">cxbsoft</div>
-            <div class="mdui-card-header-subtitle">没有解决不了的问题</div>
-        </div>
-        <div class="mdui-card-primary">
-            <div class="mdui-card-primary-title">育才2017级 - 蔡徐博</div>
-            <div class="mdui-card-primary-subtitle">擅长Python,PHP等</div>
-        </div>
-        <div class="mdui-card-actions">
-            <button class="mdui-btn mdui-ripple" mdui-dialog="{target: '#cxb'}">详细信息</button>
-            <div class="mdui-dialog" id="cxb">
-                <div class="mdui-dialog-content">
-                    <div class="mdui-progress"></div>
-                    <div class="mdui-card">
-                        <div class="mdui-card-header">
-                            <img class="mdui-card-header-avatar"
-                                src="https://cdn.jsdelivr.net/gh/soxft/cdn/soxft.cn/img/xusoft.jpg" />
-                            <div class="mdui-card-header-title">cxbsoft</div>
-                            <div class="mdui-card-header-subtitle">`python攻城狮`</div>
-                        </div>
-                        <div class="mdui-card">
-                            <center>
-                                <h2>历史项目</h2>
-                            </center>
-                            <div class="mdui-card-primary">
-                                <div class="mdui-card-primary-title">家庭安防</div>
-                                <div class="mdui-card-primary-subtitle">
-                                    &emsp;&emsp;利用Python配合树莓派实时读取传感器数据上传至云服务器,实现家庭安防感知.并同时通过科大讯飞api实现语音合成及语言唤醒功能</div>
-                                <br />
-                                <div class="mdui-card-primary-title">文件自动同步系统</div>
-                                <div class="mdui-card-primary-subtitle">&emsp;&emsp;利用Python的socket协议实现计算机之间的文件传送及远程编写
+                <div class="mdui-card-actions">
+                    <button class="mdui-btn mdui-ripple" mdui-dialog="{target: '#cxb'}">详细信息</button>
+                    <div class="mdui-dialog" id="cxb">
+                        <div class="mdui-dialog-content">
+                            <div class="mdui-progress"></div>
+                            <div class="mdui-card">
+                                <div class="mdui-card-header">
+                                    <img class="mdui-card-header-avatar" src="https://cdn.jsdelivr.net/gh/soxft/cdn/soxft.cn/img/xusoft.jpg" />
+                                    <div class="mdui-card-header-title">cxbsoft</div>
+                                    <div class="mdui-card-header-subtitle">`python攻城狮`</div>
                                 </div>
-                                <br />
-                                <div class="mdui-card-primary-title">宠物房车</div>
-                                <div class="mdui-card-primary-subtitle">&emsp;&emsp;通过两块arduino及多种传感器,实现红外遥控,温度控制等功能
-                                </div>
-                                <div class="mdui-card-primary-title">CX邮局</div>
-                                <div class="mdui-card-primary-subtitle">&emsp;&emsp;私有网页邮箱</div>
-                                <h1>
+                                <div class="mdui-card">
+                                    <center>
+                                         <h2>历史项目</h2>
+                                    </center>
+                                    <div class="mdui-card-primary">
+                                        <div class="mdui-card-primary-title">家庭安防</div>
+                                        <div class="mdui-card-primary-subtitle">&emsp;&emsp;利用Python配合树莓派实时读取传感器数据上传至云服务器,实现家庭安防感知.并同时通过科大讯飞api实现语音合成及语言唤醒功能</div>
+                                        <br />
+                                        <div class="mdui-card-primary-title">文件自动同步系统</div>
+                                        <div class="mdui-card-primary-subtitle">&emsp;&emsp;利用Python的socket协议实现计算机之间的文件传送及远程编写</div>
+                                        <br />
+                                        <div class="mdui-card-primary-title">宠物房车</div>
+                                        <div class="mdui-card-primary-subtitle">&emsp;&emsp;通过两块arduino及多种传感器,实现红外遥控,温度控制等功能</div>
+                                        <div class="mdui-card-primary-title">CX邮局</div>
+                                        <div class="mdui-card-primary-subtitle">&emsp;&emsp;私有网页邮箱</div>
+                                         <h1>
                                     <center>······</center>
                                 </h1>
 
+                                    </div>
+                                </div>
+                                <div class="mdui-card-actions"> <a class="mdui-btn mdui-ripple" href="//blog.bsot.cn">个人博客</a>
+                                <a class="mdui-btn mdui-ripple" href="//github.com/cxbsoft">Github</a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="mdui-card-actions"> <a class="mdui-btn mdui-ripple" href="//blog.bsot.cn">个人博客</a>
-                            <a class="mdui-btn mdui-ripple" href="//github.com/cxbsoft">Github</a>
-
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    </div>
-    <br />
-    <!-- xcsoft -->
-    <div class="mdui-card">
-        <div class="mdui-card-header">
-            <img class="mdui-card-header-avatar"
-                src="https://cdn.jsdelivr.net/gh/soxft/cdn/soxft.cn/img/xcsoft.jpg" />
-            <div class="mdui-card-header-title">xcsoft</div>
-            <div class="mdui-card-header-subtitle">原諒我這一生 不羁放纵爱自由</div>
-        </div>
-        <div class="mdui-card-media"></div>
-        <div class="mdui-card-primary">
-            <div class="mdui-card-primary-title">通高2019级 - 徐畅</div>
-            <div class="mdui-card-primary-subtitle">擅长PHP,HTML等</div>
-        </div>
-        <div class="mdui-card-actions">
-            <button class="mdui-btn mdui-ripple" mdui-dialog="{target: '#xc'}">详细信息</button>
-            <div class="mdui-dialog" id="xc">
-                <div class="mdui-dialog-content">
-                    <div class="mdui-progress"></div>
-                    <div class="mdui-card">
-                        <div class="mdui-card-header">
-                            <img class="mdui-card-header-avatar"
-                                src="https://cdn.jsdelivr.net/gh/soxft/cdn@master/soxft.cn/img/xcsoft.jpg" />
-                            <div class="mdui-card-header-title">xcsoft</div>
-                            <div class="mdui-card-header-subtitle">`PHP攻城狮`</div>
-                        </div>
+        <br />
+        <!-- xcsoft -->
+        <div class="mdui-card">
+            <div class="mdui-card-header">
+                <img class="mdui-card-header-avatar" src="https://cdn.jsdelivr.net/gh/soxft/cdn/soxft.cn/img/xcsoft.jpg" />
+                <div class="mdui-card-header-title">xcsoft</div>
+                <div class="mdui-card-header-subtitle">原諒我這一生 不羁放纵爱自由</div>
+            </div>
+            <div class="mdui-card-media"></div>
+            <div class="mdui-card-primary">
+                <div class="mdui-card-primary-title">通高2019级 - 徐畅</div>
+                <div class="mdui-card-primary-subtitle">擅长PHP,Python等</div>
+            </div>
+            <div class="mdui-card-actions">
+                <button class="mdui-btn mdui-ripple" mdui-dialog="{target: '#xc'}">详细信息</button>
+                <div class="mdui-dialog" id="xc">
+                    <div class="mdui-dialog-content">
+                        <div class="mdui-progress"></div>
                         <div class="mdui-card">
-                            <center>
-                                <h2>历史项目</h2>
-                            </center>
-                            <div class="mdui-card-primary">
-                                <div class="mdui-card-primary-title">URLshorting</div>
-                                <div class="mdui-card-primary-subtitle">&emsp;&emsp;星辰短域|密语 -
-                                    一款简洁美观的短域|密语程序,独创密语功能,可通过短域向别人传达信息。</div>
-                                <br />
-                                <div class="mdui-card-primary-title">Lovewall</div>
-                                <div class="mdui-card-primary-subtitle">&emsp;&emsp;星辰表白墙 - 一款简洁美观的表白墙,这是一个悄悄话平台</div>
-                                <br />
-                                <div class="mdui-card-primary-title">Lyric_downloader</div>
-                                <div class="mdui-card-primary-subtitle">&emsp;&emsp;基于php-cli的歌词批量下载器</div>
-                                <div class="mdui-card-primary-title">TimeMail</div>
-                                <div class="mdui-card-primary-subtitle">&emsp;&emsp;时光邮局 - 给未来写封信</div>
-                                <br />
-
-                                <h1>
+                            <div class="mdui-card-header">
+                                <img class="mdui-card-header-avatar" src="https://cdn.jsdelivr.net/gh/soxft/cdn@master/soxft.cn/img/xcsoft.jpg" />
+                                <div class="mdui-card-header-title">xcsoft</div>
+                                <div class="mdui-card-header-subtitle">`PHP攻城狮`</div>
+                            </div>
+                            <div class="mdui-card">
+                                <center>
+                                     <h2>历史项目</h2>
+                                </center>
+                                <div class="mdui-card-primary">
+                                    <div class="mdui-card-primary-title">URLshorting</div>
+                                    <div class="mdui-card-primary-subtitle">&emsp;&emsp;星辰短域|密语 - 一款简洁美观的短域|密语程序,独创密语功能,可通过短域向别人传达信息。</div>
+                                    <br />
+                                    <div class="mdui-card-primary-title">Lovewall</div>
+                                    <div class="mdui-card-primary-subtitle">&emsp;&emsp;星辰表白墙 - 一款简洁美观的表白墙,这是一个悄悄话平台</div>
+                                    <br />
+                                    <div class="mdui-card-primary-title">Lyric_downloader</div>
+                                    <div class="mdui-card-primary-subtitle">&emsp;&emsp;基于php-cli的歌词批量下载器</div>
+                                    <div class="mdui-card-primary-title">TimeMail</div>
+                                    <div class="mdui-card-primary-subtitle">&emsp;&emsp;时光邮局 - 给未来写封信</div>
+                                    <br />
+                                     <h1>
                                     <center>······</center>
                                 </h1>
-
+                                </div>
                             </div>
-                        </div>
-                        <div class="mdui-card-actions">
-                            <a class="mdui-btn mdui-ripple" href="//blog.xsot.cn">个人博客</a>
-
-                            <a class="mdui-btn mdui-ripple" href="//github.com/soxft">Github</a>
-
-                            <a class="mdui-btn mdui-ripple" href="//love.xsot.cn">星辰表白墙</a>
-
-                            <a class="mdui-btn mdui-ripple" href="//time.xsot.cn">TimeMail</a>
-
+                            <div class="mdui-card-actions"> <a class="mdui-btn mdui-ripple" href="//blog.xsot.cn">个人博客</a>
+                              <a class="mdui-btn mdui-ripple" href="//github.com/soxft">Github</a>
+                              <a class="mdui-btn mdui-ripple" href="//love.xsot.cn">星辰表白墙</a>
+                              <a class="mdui-btn mdui-ripple" href="//time.xsot.cn">TimeMail</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    </div>
-    <br />
-    <!-- xltzsoft -->
-    <div class="mdui-card">
-        <div class="mdui-card-header">
-            <img class="mdui-card-header-avatar"
-                src="https://cdn.jsdelivr.net/gh/soxft/cdn/soxft.cn/img/xusoft.jpg" />
-            <div class="mdui-card-header-title">xltzsoft</div>
-            <div class="mdui-card-header-subtitle">noi不拿国一不罢休</div>
-        </div>
-        <div class="mdui-card-primary">
-            <div class="mdui-card-primary-title">通高2019级 - 徐陆天泽</div>
-            <div class="mdui-card-primary-subtitle">擅长PHP,C++等</div>
-        </div>
-        <div class="mdui-card-actions">
-            <button class="mdui-btn mdui-ripple" mdui-dialog="{target: '#xltz'}">详细信息</button>
-            <div class="mdui-dialog" id="xltz">
-                <div class="mdui-dialog-content">
-                    <div class="mdui-progress"></div>
-                    <div class="mdui-card">
-                        <div class="mdui-card-header">
-                            <img class="mdui-card-header-avatar"
-                                src="https://cdn.jsdelivr.net/gh/soxft/cdn@master/soxft.cn/img/xusoft.jpg" />
-                            <div class="mdui-card-header-title">xltzsoft</div>
-                            <div class="mdui-card-header-subtitle">`C++攻城狮`</div>
-                        </div>
+        <br />
+        <!-- xltzsoft -->
+        <div class="mdui-card">
+            <div class="mdui-card-header">
+                <img class="mdui-card-header-avatar" src="https://cdn.jsdelivr.net/gh/soxft/cdn/soxft.cn/img/xusoft.jpg" />
+                <div class="mdui-card-header-title">xltzsoft</div>
+                <div class="mdui-card-header-subtitle">noi不拿国一不罢休</div>
+            </div>
+            <div class="mdui-card-primary">
+                <div class="mdui-card-primary-title">通高2019级 - 徐陆天泽</div>
+                <div class="mdui-card-primary-subtitle">擅长PHP,C++等</div>
+            </div>
+            <div class="mdui-card-actions">
+                <button class="mdui-btn mdui-ripple" mdui-dialog="{target: '#xltz'}">详细信息</button>
+                <div class="mdui-dialog" id="xltz">
+                    <div class="mdui-dialog-content">
+                        <div class="mdui-progress"></div>
                         <div class="mdui-card">
-                            <center>
-                                <h2>历史项目</h2>
-                            </center>
-                            <div class="mdui-card-primary">
+                            <div class="mdui-card-header">
+                                <img class="mdui-card-header-avatar" src="https://cdn.jsdelivr.net/gh/soxft/cdn@master/soxft.cn/img/xusoft.jpg" />
+                                <div class="mdui-card-header-title">xltzsoft</div>
+                                <div class="mdui-card-header-subtitle">`C++攻城狮`</div>
+                            </div>
+                            <div class="mdui-card">
+                                <center>
+                                     <h2>历史项目</h2>
 
-                                <h3>
+                                </center>
+                                <div class="mdui-card-primary">
+                                     <h3>
                                     <center>暂无更多</center>
                                     <h1>
                                         <center>······</center>
@@ -231,7 +273,7 @@
                             </div>
                         </div>
                         <div class="mdui-card-actions">
-                            <a class="mdui-btn mdui-ripple" href="//soxft.cn">个人博客</a>
+                            <a class="mdui-btn mdui-ripple" href="//blog.stzo.cn">个人博客</a>
                         </div>
                     </div>
                 </div>
@@ -258,20 +300,48 @@
     <h1>
         <center>······</center>
     </h1>
+</br>
+</br>
+</main>
 </body>
-</br>
-</br>
-<?php
-}
-?>
-<footer>
-    <div class="mdui-divider-inset"></div>
-    <!-- 版权 -->
-    <center>
-        <p>
-            Copyright &copy;2018-2020 <a class="mdui-text-color-grey-800" href='http://soxft.cn'>XUSOFT</a> All Rights Reserved.
-        </p>
-        <center>
-</footer>
+    <div style="height:25px;"></div>
+    <footer class="footer">
+        <!-- 页脚信息 -->
+        <text>CopyRight. &copy; 2018 - 2020 XUSOFT Copyright.</text>
+    </footer>
+        <!-- 隐藏的页面组件，如音乐播放器、网站统计。 -->
+        <div id="hidden" class="mdui-hidden"></div>
+        <!-- JavaScript文件引入(CDN) -->
+        <script src="//cdn.jsdelivr.net/gh/soxft/cdn@master/jquery/jquery.min.js"></script>
+        <script src="//cdn.jsdelivr.net/gh/soxft/cdn@master/mdui/js/mdui.min.js"></script>
+        <!-- 页面内JavaScript文件 -->
+        <script>
+        console.log("\n %c XUSOFT %c SOXFT.CN ","color:#444;background:#eee;padding:5px 0;", "color:#eee;background:#444;padding:5px 0;");
+         //console标注版权
+         
+        //var w = document.documentElement.scrollWidth || document.body.scrollWidth;
+        //var h = document.documentElement.scrollHeight || document.body.scrollHeight;
+        //获取用户屏幕高度宽度,做自适应准备
+        
+        $(document).ready(() => {
+          $("#preloader").addClass("mdui-hidden"); //加载完成时移除加载条
+          
+          var startxheight = $(startx).height()
+          $(function() {
+            $(window).scroll(function() {
+              //获取页面当前高度
+                var height = $(document).scrollTop();
+                if((height - startxheight) > 20)
+                {
+                  $("body").addClass("mdui-theme-primary-blue-grey");
+                }else{
+                  $("body").removeClass("mdui-theme-primary-blue-grey");
+                }
+            })
+        })
+        //实现翻页导致透密度改变
+        });
+        </script>
+    </body>
 
 </html>
