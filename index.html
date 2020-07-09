@@ -330,8 +330,7 @@
             $(window).scroll(function() {
               //获取页面当前高度
                 var height = $(document).scrollTop();
-              console.log(height + " " + startxheight)
-                if((height - startxheight) > 20)
+                if((startxheight - height) > 40)
                 {
                   $("body").addClass("mdui-theme-primary-blue-grey");
                 }else{
